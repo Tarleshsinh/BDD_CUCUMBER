@@ -43,19 +43,7 @@ public static WebDriver driver;
 	    search.clear();
 	    search.sendKeys("Piyush Patel");
 	    
-	    String text;
-		do {
-			search.sendKeys(Keys.ARROW_DOWN);
-			text= search.getAttribute("value");
-			System.out.println(text + "This is the get attirubte text ");
-			if(text.equals("Piyush Patel")) {
-				search.sendKeys(Keys.ENTER);
-				break;
-			}
-		}
-		while(!text.isEmpty());
-		//driver.findElement(By.xpath("//span[contains(text(),'recliners for kids')]")).isDisplayed();
-	    //driver.close();
+	   
 	    
 	}
 
