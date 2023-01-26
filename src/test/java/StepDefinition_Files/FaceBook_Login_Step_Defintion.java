@@ -32,7 +32,7 @@ public static WebDriver driver;
 	    driver.findElement(By.xpath("//input[@id='email']")).sendKeys("lamin_bada@yahoo.com");
 	    driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("Bansda10");
 	    driver.findElement(By.xpath("//button[@name='login']")).click();
-	     driver.switchTo().alert().accept();
+	     //driver.switchTo().alert().accept();
 	    //alert.dismiss();
 	    String parentwindow = driver.getWindowHandle();
 	    System.out.println(parentwindow);

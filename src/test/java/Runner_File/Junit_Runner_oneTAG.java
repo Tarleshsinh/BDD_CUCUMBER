@@ -14,12 +14,12 @@ import io.cucumber.junit.CucumberOptions;
 		glue= {"StepDefinition_Files"},
 		plugin={"pretty","html:target/site/cucumber-html",
 				"json:target/cucumber1.json"},
-		tags= "@Login"
+		tags= "@Validate_with_hexaValue"
 		
 		)
 
 
-public class Junit_Runner_Class {
+public class Junit_Runner_oneTAG {
 
 	
 	
