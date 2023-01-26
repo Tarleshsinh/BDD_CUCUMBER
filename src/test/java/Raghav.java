@@ -14,7 +14,7 @@ public class Raghav {
 }
 	
 	public void test(int a) {
-		
+		System.out.println("Hello world adding new property to class to check git bash");
 }
 	
 	
