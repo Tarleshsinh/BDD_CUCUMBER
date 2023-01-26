@@ -8,7 +8,12 @@ public class Raghav {
 	
 	
 	
-	public void test() {
+	public void test(String name) {
+		
+		
+}
+	
+	public void test(int a) {
 		
 }
 	
