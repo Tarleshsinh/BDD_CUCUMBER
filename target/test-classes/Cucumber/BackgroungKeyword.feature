@@ -1,23 +1,36 @@
-#created on 26th JAN 2023
+
+@ChatGpt
+Feature: Free CRM Login Feature
+
+
+#without Examples Keyword
+#Scenario: Free CRM Login Test Scenario
+#
+#Given user is already on Login Page
+#When title of login page is Free CRM
+#Then user enters "naveenk" and "test@123"
+#Then user clicks on login button
+#Then user is on home page
+
+@Tarlesh
+Scenario Outline: Free CRM Login Test Scenario
+
+Given user is already on Login Page
+Then user enters "<username>" and "<password>"
+Then user clicks on login button
 
 
 
-@OrangeHRM
-Feature: I want to test Background keyword
-  
-Background: 
-Scenario: Launch browser and URL
-Given I launch Browsre and URL
+Examples:
+	| username | password |
+	| naveenk  | test@123 |
+	|  tom     | test456  |
+	| Kamini   | test@123 |
+	|  Tarlesh | test456  | 	
+		
 
 
- @Test
- Scenario Outline: Scenario Outline
+
+
  
-   Then I enter "<Username>" and "<Password>"
-   
- Examples:
- 
-     | Username | Password  |
-     | India    | Gabn&6!   |
-     | Canada   | Bhjklh9*  |
    

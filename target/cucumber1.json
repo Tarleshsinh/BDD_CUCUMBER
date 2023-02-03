@@ -1,155 +1,71 @@
 [
   {
-    "line": 6,
+    "line": 7,
     "elements": [
       {
-        "line": 8,
-        "name": "",
+        "start_timestamp": "2023-02-03T05:18:25.924Z",
+        "line": 11,
+        "name": "Title of your scenario",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2023-01-27T22:00:32.311Z",
-        "line": 9,
-        "name": "Launch browser and URL",
-        "description": "",
-        "id": "i-want-to-test-background-keyword;launch-browser-and-url",
+        "id": "validate-text-colour-with-hexa-value;title-of-your-scenario",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7807261100,
+              "duration": 4060154700,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I launch Browsre and URL",
+            "line": 12,
+            "name": "I launch URl",
             "match": {
-              "location": "StepDefinition_Files.BackgroundKeyword.i_launch_browsre_and_url()"
+              "location": "StepDefinition_Files.CSS_Value_validate_Colour.i_launch_u_rl()"
             },
             "keyword": "Given "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@OrangeHRM"
-          }
-        ]
-      },
-      {
-        "line": 8,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2023-01-27T22:00:40.381Z",
-        "line": 21,
-        "name": "Scenario Outline",
-        "description": "",
-        "id": "i-want-to-test-background-keyword;scenario-outline;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
+          },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@class\u003d\u0027signin\u0027]\"}\n  (Session info: chrome\u003d109.0.5414.119)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-VT2BQ7B\u0027, ip: \u0027192.168.2.33\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57582}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b3c56c9dc1ac770cfa7ecb76d97370ac\n*** Element info: {Using\u003dxpath, value\u003d//a[@class\u003d\u0027signin\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StepDefinition_Files.BackgroundKeyword.i_enter_and(BackgroundKeyword.java:29)\r\n\tat ✽.I enter \"India\" and \"Gabn\u00266!\"(file:///C:/Users/Admin/eclipse-workspace/BDD_CUCUMBER/src/test/resources/Cucumber/BackgroungKeyword.feature:16)\r\n",
-              "duration": 2670602300,
-              "status": "failed"
+              "duration": 5514036200,
+              "status": "passed"
             },
-            "line": 16,
-            "name": "I enter \"India\" and \"Gabn\u00266!\"",
+            "line": 13,
+            "name": "I validate the color of text",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"India\"",
-                  "offset": 8
-                },
-                {
-                  "val": "\"Gabn\u00266!\"",
-                  "offset": 20
-                }
-              ],
-              "location": "StepDefinition_Files.BackgroundKeyword.i_enter_and(java.lang.String,java.lang.String)"
+              "location": "StepDefinition_Files.CSS_Value_validate_Colour.i_take_rgb_value()"
             },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "I take a \"screenshot\"",
+            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@OrangeHRM"
+            "name": "@Validate_ColurOf_Text"
           },
           {
-            "name": "@Test"
-          }
-        ]
-      },
-      {
-        "line": 8,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2023-01-27T22:00:43.087Z",
-        "line": 22,
-        "name": "Scenario Outline",
-        "description": "",
-        "id": "i-want-to-test-background-keyword;scenario-outline;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@class\u003d\u0027signin\u0027]\"}\n  (Session info: chrome\u003d109.0.5414.119)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-VT2BQ7B\u0027, ip: \u0027192.168.2.33\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57619}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6c0c8cccb4226406c5bf1f631516886a\n*** Element info: {Using\u003dxpath, value\u003d//a[@class\u003d\u0027signin\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StepDefinition_Files.BackgroundKeyword.i_enter_and(BackgroundKeyword.java:29)\r\n\tat ✽.I enter \"Canada\" and \"Bhjklh9*\"(file:///C:/Users/Admin/eclipse-workspace/BDD_CUCUMBER/src/test/resources/Cucumber/BackgroungKeyword.feature:16)\r\n",
-              "duration": 1993406400,
-              "status": "failed"
-            },
-            "line": 16,
-            "name": "I enter \"Canada\" and \"Bhjklh9*\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Canada\"",
-                  "offset": 8
-                },
-                {
-                  "val": "\"Bhjklh9*\"",
-                  "offset": 21
-                }
-              ],
-              "location": "StepDefinition_Files.BackgroundKeyword.i_enter_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@OrangeHRM"
-          },
-          {
-            "name": "@Test"
+            "name": "@Validate_with_hexaValue"
           }
         ]
       }
     ],
-    "name": "I want to test Background keyword",
+    "name": "Validate Text Colour with hexa value",
     "description": "",
-    "id": "i-want-to-test-background-keyword",
+    "id": "validate-text-colour-with-hexa-value",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Cucumber/BackgroungKeyword.feature",
+    "uri": "file:src/test/resources/Cucumber/CSS_Value_validate_Colour.feature",
     "tags": [
       {
-        "name": "@OrangeHRM",
+        "name": "@Validate_ColurOf_Text",
         "type": "Tag",
         "location": {
-          "line": 5,
+          "line": 6,
           "column": 1
         }
       }
