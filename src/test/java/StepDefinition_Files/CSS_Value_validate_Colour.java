@@ -52,7 +52,7 @@ public class CSS_Value_validate_Colour {
 		  System.out.println("Test for colour validation is PASSED"); else
 		  System.out.println("Test for colour validation is failed");
 		 Thread.sleep(3000);
-		 driver.close();
+		 driver.quit();
 	
 	}
 	
