@@ -56,7 +56,7 @@ public class CSS_Value_validate_Colour {
 	
 	}
 	
-	public void GITcommit () {
+	public void Fetch () {
 		
 	}
 	
