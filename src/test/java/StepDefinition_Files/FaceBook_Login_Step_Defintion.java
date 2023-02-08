@@ -25,6 +25,7 @@ public static WebDriver driver;
 	    WebDriverManager.chromedriver().setup();
 	    driver=new ChromeDriver();
 	    driver.manage().timeouts().setScriptTimeout(20,TimeUnit.SECONDS);
+	   
 	    
 
 	    driver.get("https://www.facebook.com");

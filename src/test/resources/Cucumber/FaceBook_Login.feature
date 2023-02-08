@@ -12,7 +12,8 @@ Feature: Login to Facebook App
     Given I launch Browser
     When  enter user id and password 
     Then I reach on home page 
-    
+  
+   
   
   @logout
   Scenario: I want to log out

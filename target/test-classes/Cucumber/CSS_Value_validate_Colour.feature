@@ -11,6 +11,6 @@ Feature: Validate Text Colour with hexa value
   Scenario: Title of your scenario
     Given I launch URl
     Then I validate the color of text
-    Then I take a "screenshot"
+   
 
   
