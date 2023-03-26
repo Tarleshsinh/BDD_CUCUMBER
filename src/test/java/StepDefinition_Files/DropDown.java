@@ -9,6 +9,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -20,8 +21,10 @@ public class DropDown {
 	public WebDriver driver;
 	@Given("when i launch chrome browser")
 	public void when_i_launch_chrome_browser() {
+		ChromeOptions co = new ChromeOptions();
+		co.addArguments("--remote-allow-origins=*");
 	    WebDriverManager.chromedriver().setup();
-	    driver = new ChromeDriver();
+	    driver = new ChromeDriver(co);
 	    driver.manage().window().maximize();
 	    driver.manage().timeouts().setScriptTimeout(30, TimeUnit.SECONDS);
 	    
