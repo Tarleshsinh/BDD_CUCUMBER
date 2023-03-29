@@ -13,7 +13,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BackgroundKeyword {
+public class Scenario_Outlin {
 
 	public WebDriver driver;
 	

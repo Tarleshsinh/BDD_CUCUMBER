@@ -1,245 +1,276 @@
 [
   {
-    "line": 7,
+    "line": 3,
     "elements": [
       {
-        "start_timestamp": "2023-03-26T21:19:24.815Z",
-        "line": 11,
-        "name": "Title of your scenario",
+        "start_timestamp": "2023-03-28T02:25:31.712Z",
+        "line": 26,
+        "name": "Free CRM Login Test Scenario",
         "description": "",
-        "id": "validate-text-colour-with-hexa-value;title-of-your-scenario",
-        "after": [
-          {
-            "result": {
-              "error_message": "org.picocontainer.injectors.AbstractInjector$UnsatisfiableDependenciesException: StepDefinition_Files.ScreenshotStepDefs has unsatisfied dependency \u0027interface org.openqa.selenium.WebDriver\u0027 for constructor \u0027public StepDefinition_Files.ScreenshotStepDefs(org.openqa.selenium.WebDriver)\u0027 from org.picocontainer.DefaultPicoContainer@514de325:5\u003c|\r\n\tat org.picocontainer.injectors.ConstructorInjector.getGreediestSatisfiableConstructor(ConstructorInjector.java:191)\r\n\tat org.picocontainer.injectors.ConstructorInjector.getGreediestSatisfiableConstructor(ConstructorInjector.java:110)\r\n\tat org.picocontainer.injectors.ConstructorInjector.access$100(ConstructorInjector.java:51)\r\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:331)\r\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\r\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\r\n\tat org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)\r\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\r\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\r\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\r\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\r\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)\r\n\tat io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:47)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)\r\n\tat io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)\r\n\tat io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:110)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\r\n",
-              "duration": 2995600,
-              "status": "failed"
-            },
-            "match": {
-              "location": "StepDefinition_Files.ScreenshotStepDefs.afterScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
+        "id": "free-crm-login-feature;free-crm-login-test-scenario;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 7482211100,
+              "duration": 7324579100,
               "status": "passed"
             },
-            "line": 12,
-            "name": "I launch URl",
+            "line": 18,
+            "name": "user is already on Login Page",
             "match": {
-              "location": "StepDefinition_Files.CSS_Value_validate_Colour.i_launch_u_rl()"
+              "location": "StepDefinition_Files.Scenario_Outline.user_is_already_on_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 6823770300,
+              "duration": 3322546700,
               "status": "passed"
             },
-            "line": 13,
-            "name": "I validate the color of text",
-            "match": {
-              "location": "StepDefinition_Files.CSS_Value_validate_Colour.i_take_rgb_value()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Validate_ColurOf_Text"
-          },
-          {
-            "name": "@Validate_with_hexaValue"
-          }
-        ]
-      }
-    ],
-    "name": "Validate Text Colour with hexa value",
-    "description": "",
-    "id": "validate-text-colour-with-hexa-value",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/Cucumber/CSS_Value_validate_Colour.feature",
-    "tags": [
-      {
-        "name": "@Validate_ColurOf_Text",
-        "type": "Tag",
-        "location": {
-          "line": 6,
-          "column": 1
-        }
-      }
-    ]
-  },
-  {
-    "line": 5,
-    "elements": [
-      {
-        "start_timestamp": "2023-03-26T21:19:39.344Z",
-        "line": 9,
-        "name": "Amazon Auto search",
-        "description": "",
-        "id": "dropdown-options;amazon-auto-search",
-        "after": [
-          {
-            "result": {
-              "error_message": "org.picocontainer.injectors.AbstractInjector$UnsatisfiableDependenciesException: StepDefinition_Files.ScreenshotStepDefs has unsatisfied dependency \u0027interface org.openqa.selenium.WebDriver\u0027 for constructor \u0027public StepDefinition_Files.ScreenshotStepDefs(org.openqa.selenium.WebDriver)\u0027 from org.picocontainer.DefaultPicoContainer@5dc0ff7d:5\u003c|\r\n\tat org.picocontainer.injectors.ConstructorInjector.getGreediestSatisfiableConstructor(ConstructorInjector.java:191)\r\n\tat org.picocontainer.injectors.ConstructorInjector.getGreediestSatisfiableConstructor(ConstructorInjector.java:110)\r\n\tat org.picocontainer.injectors.ConstructorInjector.access$100(ConstructorInjector.java:51)\r\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:331)\r\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\r\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\r\n\tat org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)\r\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\r\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\r\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\r\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\r\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)\r\n\tat io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:47)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)\r\n\tat io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)\r\n\tat io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:110)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\r\n",
-              "duration": 12508300,
-              "status": "failed"
-            },
-            "match": {
-              "location": "StepDefinition_Files.ScreenshotStepDefs.afterScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3872944200,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "when i launch chrome browser",
-            "match": {
-              "location": "StepDefinition_Files.DropDown.when_i_launch_chrome_browser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 6403426100,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I enter URL",
-            "match": {
-              "location": "StepDefinition_Files.DropDown.i_enter_url()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 11780009400,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "enter credential in Amazon serach bar \"Recliner for kids\"",
+            "line": 19,
+            "name": "user enters \"naveenk\" and \"test@123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Recliner for kids\"",
-                  "offset": 38
+                  "val": "\"naveenk\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"test@123\"",
+                  "offset": 26
                 }
               ],
-              "location": "StepDefinition_Files.DropDown.enter_credential_in_amazon_serach_bar(java.lang.String)"
+              "location": "StepDefinition_Files.Scenario_Outline.user_enters_username_and_password(java.lang.String,java.lang.String)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1492612400,
               "status": "passed"
             },
-            "line": 13,
-            "name": "Recliner for kids gets displayed",
+            "line": 20,
+            "name": "user clicks on login button",
             "match": {
-              "location": "StepDefinition_Files.DropDown.recliner_for_kids_gets_displayed()"
+              "location": "StepDefinition_Files.Scenario_Outline.user_clicks_on_login_button()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Dropdown"
+            "name": "@ChatGpt"
           },
           {
-            "name": "@Amazon_Auto_Search"
+            "name": "@Tarlesh"
           }
         ]
       },
       {
-        "start_timestamp": "2023-03-26T21:20:02.943Z",
-        "line": 17,
-        "name": "Autosuggestion_Google",
+        "start_timestamp": "2023-03-28T02:25:42.467Z",
+        "line": 27,
+        "name": "Free CRM Login Test Scenario",
         "description": "",
-        "id": "dropdown-options;autosuggestion-google",
-        "after": [
-          {
-            "result": {
-              "error_message": "org.picocontainer.injectors.AbstractInjector$UnsatisfiableDependenciesException: StepDefinition_Files.ScreenshotStepDefs has unsatisfied dependency \u0027interface org.openqa.selenium.WebDriver\u0027 for constructor \u0027public StepDefinition_Files.ScreenshotStepDefs(org.openqa.selenium.WebDriver)\u0027 from org.picocontainer.DefaultPicoContainer@d3f4505:5\u003c|\r\n\tat org.picocontainer.injectors.ConstructorInjector.getGreediestSatisfiableConstructor(ConstructorInjector.java:191)\r\n\tat org.picocontainer.injectors.ConstructorInjector.getGreediestSatisfiableConstructor(ConstructorInjector.java:110)\r\n\tat org.picocontainer.injectors.ConstructorInjector.access$100(ConstructorInjector.java:51)\r\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:331)\r\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\r\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\r\n\tat org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)\r\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\r\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\r\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\r\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\r\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)\r\n\tat io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:47)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)\r\n\tat io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)\r\n\tat io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:110)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\r\n",
-              "status": "failed"
-            },
-            "match": {
-              "location": "StepDefinition_Files.ScreenshotStepDefs.afterScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
+        "id": "free-crm-login-feature;free-crm-login-test-scenario;;3",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 5558246600,
+              "duration": 6135209800,
               "status": "passed"
             },
             "line": 18,
-            "name": "I launch chrome and launch google url",
+            "name": "user is already on Login Page",
             "match": {
-              "location": "StepDefinition_Files.DropDown.i_launch_chrome_and_launch_google_url()"
+              "location": "StepDefinition_Files.Scenario_Outline.user_is_already_on_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 7815918200,
+              "duration": 1532987100,
               "status": "passed"
             },
             "line": 19,
-            "name": "I enter switzerland Package",
+            "name": "user enters \"tom\" and \"test456\"",
             "match": {
-              "location": "StepDefinition_Files.DropDown.i_enter_switzerland_package()"
+              "arguments": [
+                {
+                  "val": "\"tom\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"test456\"",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefinition_Files.Scenario_Outline.user_enters_username_and_password(java.lang.String,java.lang.String)"
             },
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1071757100,
+              "duration": 999100,
               "status": "passed"
             },
             "line": 20,
-            "name": "switzerland package option shows in google",
+            "name": "user clicks on login button",
             "match": {
-              "location": "StepDefinition_Files.DropDown.switzerland_package_option_shows_in_google()"
+              "location": "StepDefinition_Files.Scenario_Outline.user_clicks_on_login_button()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Dropdown"
+            "name": "@ChatGpt"
           },
           {
-            "name": "@Googlesearch"
+            "name": "@Tarlesh"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-28T02:25:50.155Z",
+        "line": 28,
+        "name": "Free CRM Login Test Scenario",
+        "description": "",
+        "id": "free-crm-login-feature;free-crm-login-test-scenario;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6304938500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user is already on Login Page",
+            "match": {
+              "location": "StepDefinition_Files.Scenario_Outline.user_is_already_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1572726900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enters \"Kamini\" and \"test@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kamini\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"test@123\"",
+                  "offset": 25
+                }
+              ],
+              "location": "StepDefinition_Files.Scenario_Outline.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "StepDefinition_Files.Scenario_Outline.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ChatGpt"
+          },
+          {
+            "name": "@Tarlesh"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-28T02:25:58.046Z",
+        "line": 29,
+        "name": "Free CRM Login Test Scenario",
+        "description": "",
+        "id": "free-crm-login-feature;free-crm-login-test-scenario;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6100659600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user is already on Login Page",
+            "match": {
+              "location": "StepDefinition_Files.Scenario_Outline.user_is_already_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2154835900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enters \"Tarlesh\" and \"test456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tarlesh\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"test456\"",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefinition_Files.Scenario_Outline.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "StepDefinition_Files.Scenario_Outline.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ChatGpt"
+          },
+          {
+            "name": "@Tarlesh"
           }
         ]
       }
     ],
-    "name": "Dropdown options",
+    "name": "Free CRM Login Feature",
     "description": "",
-    "id": "dropdown-options",
+    "id": "free-crm-login-feature",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Cucumber/DropDown.feature",
+    "uri": "file:src/test/resources/Cucumber/Scenario_Outline.feature",
     "tags": [
       {
-        "name": "@Dropdown",
+        "name": "@ChatGpt",
         "type": "Tag",
         "location": {
-          "line": 4,
+          "line": 2,
           "column": 1
         }
       }
