@@ -74,7 +74,8 @@ public class DropDown {
 	@When("I enter switzerland Package")
 	public void i_enter_switzerland_package() throws Exception {
 		
-		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("switzerlandholiday Package");
+		driver.findElement(By.xpath("//textarea[@id='APjFqb']")).sendKeys("switzerlandholiday Package");
+		//driver.findElement(By.id("input")).sendKeys("switzerlandholiday Package");
 		Thread.sleep(2000);
 
 		List<WebElement>list= driver.findElements(By.xpath("//li[@class='sbct']//div[@class='eIPGRd']//div[1]/span"));

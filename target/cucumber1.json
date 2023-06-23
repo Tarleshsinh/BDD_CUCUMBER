@@ -1,276 +1,148 @@
 [
   {
-    "line": 3,
+    "line": 5,
     "elements": [
       {
-        "start_timestamp": "2023-03-28T02:25:31.712Z",
-        "line": 26,
-        "name": "Free CRM Login Test Scenario",
+        "start_timestamp": "2023-06-23T03:01:38.906Z",
+        "line": 9,
+        "name": "Amazon Auto search",
         "description": "",
-        "id": "free-crm-login-feature;free-crm-login-test-scenario;;2",
+        "id": "dropdown-options;amazon-auto-search",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7324579100,
+              "duration": 3101355400,
               "status": "passed"
             },
-            "line": 18,
-            "name": "user is already on Login Page",
+            "line": 10,
+            "name": "when i launch chrome browser",
             "match": {
-              "location": "StepDefinition_Files.Scenario_Outline.user_is_already_on_login_page()"
+              "location": "StepDefinition_Files.DropDown.when_i_launch_chrome_browser()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3322546700,
+              "duration": 622613100,
               "status": "passed"
             },
-            "line": 19,
-            "name": "user enters \"naveenk\" and \"test@123\"",
+            "line": 11,
+            "name": "I enter URL",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"naveenk\"",
-                  "offset": 12
-                },
-                {
-                  "val": "\"test@123\"",
-                  "offset": 26
-                }
-              ],
-              "location": "StepDefinition_Files.Scenario_Outline.user_enters_username_and_password(java.lang.String,java.lang.String)"
+              "location": "StepDefinition_Files.DropDown.i_enter_url()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#twotabsearchtextbox\"}\n  (Session info: chrome\u003d114.0.5735.134)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-VT2BQ7B\u0027, ip: \u0027192.168.2.33\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53541}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 712e034731d2c8d494d8984b92355850\n*** Element info: {Using\u003did, value\u003dtwotabsearchtextbox}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StepDefinition_Files.DropDown.enter_credential_in_amazon_serach_bar(DropDown.java:40)\r\n\tat ✽.enter credential in Amazon serach bar \"Recliner for kids\"(file:///C:/Users/Admin/eclipse-workspace/BDD_CUCUMBER/src/test/resources/Cucumber/DropDown.feature:12)\r\n",
+              "duration": 45972900,
+              "status": "failed"
             },
-            "line": 20,
-            "name": "user clicks on login button",
+            "line": 12,
+            "name": "enter credential in Amazon serach bar \"Recliner for kids\"",
             "match": {
-              "location": "StepDefinition_Files.Scenario_Outline.user_clicks_on_login_button()"
+              "arguments": [
+                {
+                  "val": "\"Recliner for kids\"",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinition_Files.DropDown.enter_credential_in_amazon_serach_bar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1001000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Recliner for kids gets displayed",
+            "match": {
+              "location": "StepDefinition_Files.DropDown.recliner_for_kids_gets_displayed()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@ChatGpt"
+            "name": "@Dropdown"
           },
           {
-            "name": "@Tarlesh"
+            "name": "@Amazon_Auto_Search"
           }
         ]
       },
       {
-        "start_timestamp": "2023-03-28T02:25:42.467Z",
-        "line": 27,
-        "name": "Free CRM Login Test Scenario",
+        "start_timestamp": "2023-06-23T03:01:42.893Z",
+        "line": 17,
+        "name": "Autosuggestion_Google",
         "description": "",
-        "id": "free-crm-login-feature;free-crm-login-test-scenario;;3",
+        "id": "dropdown-options;autosuggestion-google",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 6135209800,
+              "duration": 3564666500,
               "status": "passed"
             },
             "line": 18,
-            "name": "user is already on Login Page",
+            "name": "I launch chrome and launch google url",
             "match": {
-              "location": "StepDefinition_Files.Scenario_Outline.user_is_already_on_login_page()"
+              "location": "StepDefinition_Files.DropDown.i_launch_chrome_and_launch_google_url()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1532987100,
+              "duration": 2747768300,
               "status": "passed"
             },
             "line": 19,
-            "name": "user enters \"tom\" and \"test456\"",
+            "name": "I enter switzerland Package",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"tom\"",
-                  "offset": 12
-                },
-                {
-                  "val": "\"test456\"",
-                  "offset": 22
-                }
-              ],
-              "location": "StepDefinition_Files.Scenario_Outline.user_enters_username_and_password(java.lang.String,java.lang.String)"
+              "location": "StepDefinition_Files.DropDown.i_enter_switzerland_package()"
             },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 999100,
+              "duration": 3772782800,
               "status": "passed"
             },
             "line": 20,
-            "name": "user clicks on login button",
+            "name": "switzerland package option shows in google",
             "match": {
-              "location": "StepDefinition_Files.Scenario_Outline.user_clicks_on_login_button()"
+              "location": "StepDefinition_Files.DropDown.switzerland_package_option_shows_in_google()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@ChatGpt"
+            "name": "@Dropdown"
           },
           {
-            "name": "@Tarlesh"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-03-28T02:25:50.155Z",
-        "line": 28,
-        "name": "Free CRM Login Test Scenario",
-        "description": "",
-        "id": "free-crm-login-feature;free-crm-login-test-scenario;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 6304938500,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user is already on Login Page",
-            "match": {
-              "location": "StepDefinition_Files.Scenario_Outline.user_is_already_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1572726900,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user enters \"Kamini\" and \"test@123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Kamini\"",
-                  "offset": 12
-                },
-                {
-                  "val": "\"test@123\"",
-                  "offset": 25
-                }
-              ],
-              "location": "StepDefinition_Files.Scenario_Outline.user_enters_username_and_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user clicks on login button",
-            "match": {
-              "location": "StepDefinition_Files.Scenario_Outline.user_clicks_on_login_button()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@ChatGpt"
-          },
-          {
-            "name": "@Tarlesh"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-03-28T02:25:58.046Z",
-        "line": 29,
-        "name": "Free CRM Login Test Scenario",
-        "description": "",
-        "id": "free-crm-login-feature;free-crm-login-test-scenario;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 6100659600,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user is already on Login Page",
-            "match": {
-              "location": "StepDefinition_Files.Scenario_Outline.user_is_already_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2154835900,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user enters \"Tarlesh\" and \"test456\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Tarlesh\"",
-                  "offset": 12
-                },
-                {
-                  "val": "\"test456\"",
-                  "offset": 26
-                }
-              ],
-              "location": "StepDefinition_Files.Scenario_Outline.user_enters_username_and_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user clicks on login button",
-            "match": {
-              "location": "StepDefinition_Files.Scenario_Outline.user_clicks_on_login_button()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@ChatGpt"
-          },
-          {
-            "name": "@Tarlesh"
+            "name": "@Googlesearch"
           }
         ]
       }
     ],
-    "name": "Free CRM Login Feature",
+    "name": "Dropdown options",
     "description": "",
-    "id": "free-crm-login-feature",
+    "id": "dropdown-options",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Cucumber/Scenario_Outline.feature",
+    "uri": "file:src/test/resources/Cucumber/DropDown.feature",
     "tags": [
       {
-        "name": "@ChatGpt",
+        "name": "@Dropdown",
         "type": "Tag",
         "location": {
-          "line": 2,
+          "line": 4,
           "column": 1
         }
       }
