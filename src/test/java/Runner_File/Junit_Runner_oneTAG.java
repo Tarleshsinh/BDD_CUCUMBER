@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 		glue= {"StepDefinition_Files"},
 		plugin={"pretty","html:target/site/cucumber-html",
 				"json:target/cucumber1.json"},
-		tags= "@Dropdown"
+		tags= "@Dropdown1"
 		
 		)
 
