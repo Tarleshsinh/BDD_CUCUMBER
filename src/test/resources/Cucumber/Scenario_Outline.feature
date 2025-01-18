@@ -1,5 +1,5 @@
 
-@ChatGpt
+@Scenario_Outline
 Feature: Free CRM Login Feature
 
 

@@ -30,7 +30,8 @@ public class CSS_Value_validate_Colour {
 	
 	@Given("I launch URl")
 	public void i_launch_u_rl() {
-		WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Admin\\Desktop\\Sarthak Selenium\\Browsers drivers\\chromedriver.exe");
+		//WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.blazedemo.com");

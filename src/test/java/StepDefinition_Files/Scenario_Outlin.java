@@ -19,7 +19,8 @@ public class Scenario_Outlin {
 	
 	@Given("user is already on Login Page")
 	public void user_is_already_on_login_page() {
-		WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Admin\\Desktop\\Sarthak Selenium\\Browsers drivers\\chromedriver.exe");
+		//WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.rediff.com");

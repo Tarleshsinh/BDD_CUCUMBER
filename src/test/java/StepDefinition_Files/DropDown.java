@@ -21,10 +21,12 @@ public class DropDown {
 	public WebDriver driver;
 	@Given("when i launch chrome browser")
 	public void when_i_launch_chrome_browser() {
+		
 		ChromeOptions co = new ChromeOptions();
 		co.addArguments("--remote-allow-origins=*");
-	    WebDriverManager.chromedriver().setup();
-	    driver = new ChromeDriver(co);
+		//WebDriverManager.chromedriver().setup(); // Use WebDriverManager to setup ChromeDriver
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Admin\\Desktop\\Sarthak Selenium\\Browsers drivers\\chromedriver.exe");
+	     driver = new ChromeDriver(co);
 	    driver.manage().window().maximize();
 	    driver.manage().timeouts().setScriptTimeout(30, TimeUnit.SECONDS);
 	    
