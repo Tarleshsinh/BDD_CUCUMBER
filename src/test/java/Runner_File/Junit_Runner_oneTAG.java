@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
     features= {"src/test/resources/Cucumber"},
     glue= {"StepDefinition_Files"},
     plugin={"pretty","html:target/site/cucumber-html", "json:target/cucumber1.json"},
-    tags= " @NotepadVsNotePad",
+    tags= "@Validate_ColurOf_Text",
     publish = true // Activates publishing of Cucumber reports
 )
 
