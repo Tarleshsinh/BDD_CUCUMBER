@@ -3,9 +3,12 @@ package StepDefinition_Files;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -18,8 +21,20 @@ public class Switch_Window {
     @Given("I launch URL")
     public void i_launch_url() {
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+
+        // Disable notifications and infobars
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-notifications");
+        options.addArguments("--disable-popup-blocking");
+        options.addArguments("--disable-infobars");
+
+        driver = new ChromeDriver(options);
         driver.get("https://www.globalsqa.com/demo-site/");
+
+        // Handle pop-up alert or modal immediately after launch
+        handleUnexpectedAlert();
+        handlePossibleModalPopup();
+
         driver.manage().window().maximize();
         driver.manage().timeouts().setScriptTimeout(20, TimeUnit.SECONDS);
     }
@@ -41,36 +56,60 @@ public class Switch_Window {
 
     @Then("I simulate opening multiple windows")
     public void i_simulate_opening_multiple_windows() throws InterruptedException {
-        // Adding a hard wait before opening new tabs
-        Thread.sleep(2000); // Wait for 2 seconds
+        Thread.sleep(2000);
 
-        // Click the 'Click Here' button to open new windows
-        driver.findElement(By.xpath("//div[@class='single_tab_div resp-tab-content resp-tab-content-active']/child::a[@class='button e.g. button_hilite button_pale small_button']")).click();
-        Thread.sleep(2000); // Wait for 2 seconds before opening another tab
-
-        driver.findElement(By.xpath("//div[@class='single_tab_div resp-tab-content resp-tab-content-active']/child::a[@class='button e.g. button_hilite button_pale small_button']")).click();
-        Thread.sleep(2000); // Wait for 2 seconds before opening another tab
-
-        driver.findElement(By.xpath("//div[@class='single_tab_div resp-tab-content resp-tab-content-active']/child::a[@class='button e.g. button_hilite button_pale small_button']")).click();
-        Thread.sleep(2000); // Wait for 2 seconds before proceeding
+        // Click the 'Click Here' button 3 times
+        for (int i = 0; i < 3; i++) {
+            try {
+                driver.findElement(By.xpath("//div[@class='single_tab_div resp-tab-content resp-tab-content-active']/child::a[contains(text(),'Click Here')]")).click();
+                Thread.sleep(2000);
+                handleUnexpectedAlert();
+            } catch (Exception e) {
+                System.out.println("Exception while opening window: " + e.getMessage());
+            }
+        }
     }
 
     @Then("I switch back to parent frames")
     public void i_switch_back_to_parent_frames() throws InterruptedException {
-        String parentWindowHandle = driver.getWindowHandle(); // Get the parent window handle
-        Set<String> allWindowHandles = driver.getWindowHandles(); // Get all window handles
+        String parentWindowHandle = driver.getWindowHandle();
+        Set<String> allWindowHandles = driver.getWindowHandles();
 
         for (String handle : allWindowHandles) {
             if (!handle.equals(parentWindowHandle)) {
-                driver.switchTo().window(handle); // Switch to the child window
-                Thread.sleep(2000); // Adding a wait before closing the window
-                driver.close(); // Close the child window
+                driver.switchTo().window(handle);
+                Thread.sleep(2000);
+                driver.close();
             }
         }
 
-        // Switch back to the parent window
         driver.switchTo().window(parentWindowHandle);
-        Thread.sleep(2000); // Adding a wait before quitting the driver
-        driver.quit(); // Close the browser
+        Thread.sleep(2000);
+        driver.quit();
+    }
+
+    // Handle JavaScript alert popups (e.g. alert(), confirm())
+    public void handleUnexpectedAlert() {
+        try {
+            Alert alert = driver.switchTo().alert();
+            System.out.println("Unexpected alert found: " + alert.getText());
+            alert.dismiss(); // or alert.accept()
+        } catch (Exception e) {
+            // No JS alert present
+        }
+    }
+
+    // Handle HTML modal popups (e.g. newsletter, ads, GDPR modals)
+    public void handlePossibleModalPopup() {
+        try {
+            // Try common modal close buttons
+            WebElement closeBtn = driver.findElement(By.cssSelector(".popup-close, .close-button, .close, .elementor-popup-modal .dialog-close-button"));
+            if (closeBtn.isDisplayed()) {
+                closeBtn.click();
+                System.out.println("Modal popup closed.");
+            }
+        } catch (Exception e) {
+            // No modal found
+        }
     }
 }
