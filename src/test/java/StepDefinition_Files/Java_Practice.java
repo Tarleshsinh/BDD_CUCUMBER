@@ -1,0 +1,147 @@
+package StepDefinition_Files;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Random;
+import java.util.Set;
+
+public class Java_Practice {
+
+
+	
+	
+	
+	// This class contains 11 functionalities:
+	// 1. Check if a number is Prime
+	// 2. Check if a number is a Palindrome
+	// 3. Reverse a String
+	// 4. Count occurrence of each character in a String
+	// 5. Swap two numbers (without third variable)
+	// 6. Sum of digits of a number
+	// 7. Generate Fibonacci series up to n terms
+	// 8. Reverse a number
+	// 9. Check if a number is Even or Odd
+	// 10. Generate a random number
+	// 11. Find duplicates in an array
+
+	
+
+	    // 1. Prime Number
+	    public static boolean isPrime(int num) {
+	        if (num < 2) return false;
+	        for (int i = 2; i <= Math.sqrt(num); i++) {
+	            if (num % i == 0) return false;
+	        }
+	        return true;
+	    }
+
+	    // 2. Palindrome Number
+	    public static boolean isPalindrome(int num) {
+	        int original = num, reversed = 0;
+	        while (num != 0) {
+	            reversed = reversed * 10 + num % 10;
+	            num /= 10;
+	        }
+	        return original == reversed;
+	    }
+
+	    // 3. Reverse String
+	    public static String reverseString(String str) {
+	        return new StringBuilder(str).reverse().toString();
+	    }
+
+	    // 4. Count Occurrence of Characters
+	    public static void countCharOccurrences(String str) {
+	        HashMap<Character, Integer> map = new HashMap<>();
+	        for (char c : str.toCharArray()) {
+	            map.put(c, map.getOrDefault(c, 0) + 1);
+	        }
+	        System.out.println("Character occurrences: " + map);
+	    }
+
+	    // 5. Swap two numbers (without third variable)
+	    public static void swapNumbers(int a, int b) {
+	        System.out.println("Before Swap: a = " + a + ", b = " + b);
+	        a = a + b;
+	        b = a - b;
+	        a = a - b;
+	        System.out.println("After Swap: a = " + a + ", b = " + b);
+	    }
+
+	    // 6. Sum of digits
+	    public static int sumOfDigits(int num) {
+	        int sum = 0;
+	        while (num != 0) {
+	            sum += num % 10;
+	            num /= 10;
+	        }
+	        return sum;
+	    }
+
+	    // 7. Fibonacci Series
+	    public static void fibonacciSeries(int n) {
+	        int a = 0, b = 1;
+	        System.out.print("Fibonacci Series: ");
+	        for (int i = 0; i < n; i++) {
+	            System.out.print(a + " ");
+	            int next = a + b;
+	            a = b;
+	            b = next;
+	        }
+	        System.out.println();
+	    }
+
+	    // 8. Reverse Number
+	    public static int reverseNumber(int num) {
+	        int reversed = 0;
+	        while (num != 0) {
+	            reversed = reversed * 10 + num % 10;
+	            num /= 10;
+	        }
+	        return reversed;
+	    }
+
+	    // 9. Even or Odd
+	    public static String evenOrOdd(int num) {
+	        return num % 2 == 0 ? "Even" : "Odd";
+	    }
+
+	    // 10. Generate Random Number
+	    public static int generateRandomNumber(int bound) {
+	        Random rand = new Random();
+	        return rand.nextInt(bound); // random number from 0 to bound-1
+	    }
+
+	    // 11. Find Duplicate in Array
+	    public static void findDuplicates(int[] arr) {
+	        Set<Integer> seen = new HashSet<>();
+	        Set<Integer> duplicates = new HashSet<>();
+	        for (int num : arr) {
+	            if (!seen.add(num)) {
+	                duplicates.add(num);
+	            }
+	        }
+	        System.out.println("Duplicates: " + duplicates);
+	    }
+
+	    public static void main(String[] args) {
+	        System.out.println("Is 17 Prime? " + isPrime(17));
+	        System.out.println("Is 121 Palindrome? " + isPalindrome(121));
+	        System.out.println("Reversed 'hello': " + reverseString("hello"));
+	        countCharOccurrences("banana");
+	        swapNumbers(10, 20);
+	        System.out.println("Sum of digits in 1234: " + sumOfDigits(1234));
+	        fibonacciSeries(7);
+	        System.out.println("Reversed number 54321: " + reverseNumber(54321));
+	        System.out.println("7 is " + evenOrOdd(7));
+	        System.out.println("Random number (0-99): " + generateRandomNumber(100));
+	        findDuplicates(new int[]{1, 2, 3, 2, 4, 5, 1});
+	    }
+	}
+
+	
+	
+	
+	
+	
+

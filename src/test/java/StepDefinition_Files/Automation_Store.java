@@ -4,7 +4,11 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -13,6 +17,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.asserts.SoftAssert;
 
 import io.cucumber.java.en.Given;
@@ -46,12 +51,12 @@ public class Automation_Store {
 		SoftAssert softassert = new SoftAssert();
 		softassert.assertTrue(ResetPassword.isDisplayed(), "Reset Password Button is not displayed");
 		softassert.assertTrue(ResetPassword.isEnabled(), "Reset Password Button is not enabled");
-		System.out.println("✅ Reset Password button is visible and enabled");
+		System.out.println("âœ… Reset Password button is visible and enabled");
 
 		try {
 			softassert.assertAll(); // This triggers the assertions
 		} catch (AssertionError e) {
-			System.out.println("❌ Assertion Failed: " + e.getMessage());
+			System.out.println("â�Œ Assertion Failed: " + e.getMessage());
 			takeScreenshot("AssertionFailure");
 			throw e; // re-throwing so it still fails in reports
 		}
@@ -82,6 +87,8 @@ public class Automation_Store {
 
 		FileUtils.copyFile(screenshot, destination);
 
-		System.out.println("📸 Screenshot saved at: " + destination.getAbsolutePath());
-	}
+		System.out.println("ðŸ“¸ Screenshot saved at: " + destination.getAbsolutePath());
+		
+		
+        	}
 }
