@@ -9,10 +9,10 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
     dryRun=false,
     monochrome=true,
-    features= {"src/test/resources/Cucumber"},
-    glue= {"StepDefinition_Files"},
+    features= {"src/test/resources/Cucumber","src/test/resources/Cucumber/Demo_QA/Alerts_Frame_Windows"},
+    glue= {"StepDefinition_Files","Demo_QA"},
     plugin={"pretty","html:target/site/cucumber-html", "json:target/cucumber1.json"},
-    tags= "@background_Keyword",
+    tags= "@Log_In_Steps",
     publish = true // Activates publishing of Cucumber reports
 )
 
